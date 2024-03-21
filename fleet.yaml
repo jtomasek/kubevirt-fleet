@@ -1,7 +1,7 @@
 defaultNamespace: kubevirt
 helm:
   chart: "kubevirt"
-  repo: "https://download.suse.de/ibs/ISV:/SUSE:/Edge:/3.0.0/charts/"
+  repo: "https://suse-edge.github.io/charts"
   version: "0.2.3"
   takeOwnership: true
 diff:
