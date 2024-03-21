@@ -1,0 +1,14 @@
+defaultNamespace: kubevirt
+helm:
+  chart: "kubevirt"
+  repo: "https://download.suse.de/ibs/ISV:/SUSE:/Edge:/3.0.0/charts/"
+  version: "0.2.3"
+  takeOwnership: true
+diff:
+  comparePatches:
+  - apiVersion: kubevirt.io/v1
+    kind: KubeVirt
+    name: kubevirt
+    namespace: kubevirt
+    operations:
+    - {"op":"remove", "path":"/spec/configuration/developerConfiguration/featureGates"}
